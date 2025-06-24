@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo-List</title>
+<script defer src="main.js"></script></head>
+<body>
+
+    <div class="header">
+        <div class="bgNavBtn">
+            <div class="navBtnMob"></div>
+        </div>
+        <div class="title-header" id="title-header">TodoList</div>
+    </div>
+    <div class="main">
+        <div class="container" id="nav">
+            <div class="boxNav" id="home">
+                <h2 class="title-boxNav" id="Home-title">Home</h2>
+                <button class="btn-home-page" id="allTask">All Tasks</button>
+                <button class="btn-home-page" id="toDay">Today</button>
+                <button class="btn-home-page" id="sevenDays">Next 7 days</button>
+                <button class="btn-home-page" id="important">Important</button>
+            </div>
+            <div class="boxNav" id="projects">
+                <h2 class="title-boxNav" id="Projects-title">Projects</h2>
+                <div class="project-container"></div>
+                <div class="pop-upContainer">
+                    <div id="alertmsg">Fill this!</div>
+                    <input id="inputProject"><div class="buttonsPopUp">
+                    <button class="popUpBtn" id="addPopUp">Add</button>
+                    <button class="popUpBtn" id="cancelPopUp">Cancel</button>
+                    </div>
+                </div>
+                <button class="btn-home-page" id="addProject">Add Project</button>
+            </div>
+        </div>
+        <div class="container" id="task-container">
+            <div class="title-tasks"></div>
+            <div class="add-task-btn" id="add-task-btn">Add Task</div>
+            <dialog>
+                <form>
+                    <div class="inputBox">
+                    <label>Title:</label>
+                    <input type="text" id="titleTask" placeholder="What to do?">
+                    <label>Details (optional):</label>
+                    <textarea type="text" id="detailTask" placeholder="Eg: Do some excersice!!" wrap="hard"></textarea>
+                    <label>Date:</label>
+                    <input type="date" id="dateTask">
+                    <div class="formCheck"> 
+                        <label>Important:</label>
+                        <input type='checkbox' class="checkBtn" id="checkBtn">
+                    </div>
+                    <div class="formButtons">
+                        <input type="button" class="form-btn" id="processTask" value="Add">
+                        <input type="button" class="form-btn" id="cancelTaskBTn" value="Cancel">
+                    </div>  
+                    </div>
+                    </form>
+            </dialog>
+            <div class="list-task-container"></div>
+        </div>
+    </div>
+    <div class="footer"></div>
+</body>
+</html>
+
